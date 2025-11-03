@@ -6,7 +6,8 @@
 
 
 -----**Storage Nodes:**
-Unlike Validator Nodes that focus on securing the blockchain itself, Storage Nodes focus on managing and serving data. They are the backbone of the network's data storage capabilities, ensuring persistence and availability for long-term data storage (e.g., training datasets, large AI models). By running a storage node, you'll contribute to the decentralized storage of 0G data, making it accessible and resilient.
+Storage Nodes store and manage blockchain data (like AI datasets, models, etc.).
+By running one, you help keep the 0G network’s data decentralized and always available.
 
 <div align="center">
 
@@ -25,7 +26,7 @@ Unlike Validator Nodes that focus on securing the blockchain itself, Storage Nod
 
 * Add 0G-Galileo-Testnet chain from here: https://docs.0g.ai/run-a-node/testnet-information
 
-* Take faucet: https://faucet.0g.ai/
+* Get faucet: https://faucet.0g.ai/
 
 
 # Install All Require Dependecies
@@ -96,7 +97,7 @@ rm -rf $HOME/0g-storage-node/run/config.toml
 ```
 
 ```
-curl -o $HOME/0g-storage-node/run/config.toml https://raw.githubusercontent.com/Mayankgg01/0G-Storage-Node-Guide/main/config.toml
+curl -o $HOME/0g-storage-node/run/config.toml https://raw.githubusercontent.com/Shardaprasadsk/0G-Storage-Node-Guide/main/config.toml
 ```
 
 
@@ -160,7 +161,7 @@ sudo systemctl start zgs
 ```
 
 
-* [Download Snapshot for Faster Sync:](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#-download-snapshot-for-faster-sync-) 
+* [Download Snapshot for Faster Sync:](https://github.com/Shardaprasadsk/0G-Storage-Node-Guide?tab=readme-ov-file#-download-snapshot-for-faster-sync-) 
 
 # Managing Logs
 
@@ -214,7 +215,7 @@ DONE!!
 
 ## 📋FAQ-1 ( Process for Local Device & how to restart on next day!)
 
-* So, For local PC All the process is same as VPS: You have to start from [Pre-Requirements 🛠](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#pre-requirements-)
+* So, For local PC All the process is same as VPS: You have to start from [Pre-Requirements 🛠](https://github.com/Shardaprasadsk/0G-Lab-Node-Guide?tab=readme-ov-file#pre-requirements-)
 
 * 👉Next Day process:
                   
@@ -253,8 +254,8 @@ rm -rf $HOME/0g-storage-node/run/db/flow_db
 * Download and extract the Flow db:
 
 ```
-wget -q https://github.com/Mayankgg01/0G-Storage-Node-Guide/releases/download/v1.0/flow_db.tar.zst.part-aa && \
-wget -q https://github.com/Mayankgg01/0G-Storage-Node-Guide/releases/download/v1.0/flow_db.tar.zst.part-ab && \
+wget -q https://github.com/Shardaprasadsk/0G-Lab-Node-Guide/releases/download/v1.0/flow_db.tar.zst.part-aa && \
+wget -q https://github.com/Shardaprasadsk/0G-Lab-Node-Guide/releases/download/v1.0/flow_db.tar.zst.part-ab && \
 cat flow_db.tar.zst.part-* > flow_db.tar.zst && \
 tar --use-compress-program=unzstd -xvf flow_db.tar.zst -C $HOME/0g-storage-node/run/db/ && \
 rm flow_db.tar.zst.part-* flow_db.tar.zst
@@ -289,10 +290,10 @@ sudo rm /etc/systemd/system/zgs.service
 rm -rf $HOME/0g-storage-node
 ```
 
-* After that Start From [Clone the Repository](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#clone-the-repository)
+* After that Start From [Clone the Repository](https://github.com/Shardaprasadsk/0G-Lab-Node-Guide?tab=readme-ov-file#clone-the-repository)
 
 
-* Dont Forget to Download Snapshot for faster sync: [Snapshot](https://github.com/Mayankgg01/0G-Storage-Node-Guide/edit/main/README.md#-download-snapshot-for-faster-sync-)
+* Dont Forget to Download Snapshot for faster sync: [Snapshot](https://github.com/Shardaprasadsk/0G-Lab-Node-Guide#-download-snapshot-for-faster-sync-)
 
 Done✅✔️
 
@@ -344,7 +345,7 @@ cargo build --release
 ```
 
 
-* ❗❗  Dont forget to set configs: [Set Configrations](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#set-configrations)
+* ❗❗  Dont forget to set configs: [Set Configrations](https://github.com/Shardaprasadsk/0G-Lab-Node-Guide?tab=readme-ov-file#set-configrations)
 
 * Start your Node
 
@@ -355,18 +356,14 @@ sudo systemctl start zgs
 
 * ❗❗ After that Dont Forget to download Snapshot for faster Sync: 
 
------------Follow this procees: [📈 Download Snapshot For Faster Sync 🚀](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#-download-snapshot-for-faster-sync-)
+-----------Follow this procees: [📈 Download Snapshot For Faster Sync 🚀](https://github.com/Shardaprasadsk/0G-Lab-Node-Guide?tab=readme-ov-file#-download-snapshot-for-faster-sync-)
 
 
 🥳Done: U have upgrade to latest Release
 
-
-
-
 ```
-👉 Join TG for more Updates: https://telegram.me/cryptogg
 
-If U have any issue then open a issue on this repo or Dm me on TG~
+If U have any issue then open a issue on this repo or Dm me ~
 
 Thank You! Happy Coding!📈
 ```
